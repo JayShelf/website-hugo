@@ -1,0 +1,145 @@
+baseURL = "https://JayShelf.github.io/" 
+languageCode = "en"
+title = "JayShelf Blog" 
+theme = 'FixIt'
+
+# [en, zh-cn, fr, pl, ...] 设置默认的语言
+defaultContentLanguage = "zh-cn"
+
+[languages]
+  [languages.en]
+    weight = 1
+    title = "My Hugo FixIt Site"
+    languageCode = "en"
+    languageName = "English"
+    [[languages.en.menu.main]]
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "Posts"
+      url = "/posts/"
+      title = ""
+      weight = 1
+    [[languages.en.menu.main]]
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "Tags"
+      url = "/tags/"
+      title = ""
+      weight = 2
+    [[languages.en.menu.main]]
+      identifier = "categories"
+      pre = ""
+      post = ""
+      name = "Categories"
+      url = "/categories/"
+      title = ""
+      weight = 3
+
+  [languages.zh-cn]
+    weight = 2
+    title = "我的 Hugo FixIt 网站"
+    # 网站语言，仅在这里 CN 大写
+    languageCode = "zh-CN"
+    languageName = "简体中文"
+    # 是否包括中日韩文字
+    hasCJKLanguage = true
+    [[languages.zh-cn.menu.main]]
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "文章"
+      url = "/posts/"
+      title = ""
+      weight = 1
+    [[languages.zh-cn.menu.main]]
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "标签"
+      url = "/tags/"
+      title = ""
+      weight = 2
+    [[languages.zh-cn.menu.main]]
+      identifier = "categories"
+      pre = ""
+      post = ""
+      name = "分类"
+      url = "/categories/"
+      title = ""
+      weight = 3
+
+  [languages.fr]
+    weight = 3
+    title = "Mon nouveau site Hugo FixIt"
+    languageCode = "fr"
+    languageName = "Français"
+    [[languages.fr.menu.main]]
+      identifier = "posts"
+      pre = ""
+      post = ""
+      name = "Postes"
+      url = "/posts/"
+      title = ""
+      weight = 1
+    [[languages.fr.menu.main]]
+      identifier = "tags"
+      pre = ""
+      post = ""
+      name = "Balises"
+      url = "/tags/"
+      title = ""
+      weight = 2
+    [[languages.fr.menu.main]]
+      identifier = "categories"
+      pre = ""
+      post = ""
+      name = "Catégories"
+      url = "/categories/"
+      title = ""
+      weight = 3
+
+
+[params]
+  # FixIt 0.2.15 | 更改 FixIt 主题版本
+  version = "0.2.X" # 例如："0.2.X", "0.2.15", "v0.2.15" 等
+  # 网站描述
+  description = "这是我的 Hugo FixIt 网站"
+  # 网站关键词
+  keywords = ["Hugo", "FixIt"]
+  # 网站默认主题样式 ["light", "dark", "auto"]
+  defaultTheme = "auto"
+  # FixIt 0.1.1 | 新增 哪种哈希函数用来 SRI, 为空时表示不使用 SRI
+  # ["sha256", "sha384", "sha512", "md5"]
+  fingerprint = ""
+  # FixIt 0.2.0 | 新增 日期格式
+  dateFormat = "2006-01-02"
+  # 网站图片，用于 Open Graph 和 Twitter Cards
+  images = ["/logo.png"]
+  # FixIt 0.2.12 | 新增 开启 PWA 支持
+  enablePWA = true
+  # FixIt 0.2.14 | 新增 是否自动显示外链图标
+  externalIcon = false
+  # FixIt 0.3.0 | 新增 是否反转导航菜单的顺序
+  navigationReverse = false
+  # FixIt 0.3.0 | 新增 是否在每个页面标题中添加网站标题
+  # 请记得在 `hugo.toml` 中设置网站标题 (例如 title = "title")
+  withSiteTitle = true
+  # FixIt 0.3.0 | 新增 当网站标题被添加到每个页面标题时的标题分隔符
+  titleDelimiter = "-"
+  # FixIt 0.3.0 | 新增 是否在主页标题中添加网站副标题
+  # 请记得通过 `params.header.subtitle.name` 设置网站副标题
+  indexWithSubtitle = false
+  # FixIt 0.2.14 | 新增 默认情况下，FixIt 只会在主页的 HTML 头中注入主题元标记
+  # 你可以将其关闭，但如果你不这样做，我们将不胜感激，因为这是观察 FixIt 受欢迎程度上升的好方法
+  disableThemeInject = false
+
+  # 作者配置
+  [params.author]
+    name = ""
+    email = "tanzhilang031@gmail.com"
+    link = ""
+    avatar = ""
+
+
